@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chloe's portfolio</title>
+    <meta
+      name="description"
+      content="portfolio for THE software engineer Chloe"
+    />
+    <meta name="author" content="Chloe BK Kim" />
+    <link rel="icon" type="image/png" href="imgs/favicon-16x16.png" />
+  
+    <script src="https://kit.fontawesome.com/8b3a48be92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500;600;700&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar">
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item" data-link="#home">HOME</li>
+        <li class="navbar_menu_item" data-link="#about">ABOUT</li>
+        <li class="navbar_menu_item" data-link="#skills">SKILLS</li>
+        <li class="navbar_menu_item" data-link="#work">PORTFOLIO</li>
+        <li class="navbar_menu_item" data-link="#contact">CONTACT</li>
+      </ul>
+    <!-- toggle button -->
+     <button class="navbar_toggle-btn"><i class="fas fa-bars"></i></button>
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+      </div>
+   </nav>
+  
+    <!-- home -->
+    <section id="home">
+      <div class="description_container">
+        <h1 class="home_title">
+        Hello, <br />
+        I am Chloe
+      </h1>
+      <h2 class="home_description">
+      A Software Engineer currently residing in Montreal, Canada. 
+      </h2>
+      </div>
+     
+      <div class="avatar_container">
+        <img src="imgs/me.png" alt="my profile image" class="home_avatar" />
+         <button class="home_contact">Contact Me</button>
+         </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section section-container">
+      <h1>About Me</h1>
+      <p>
+        I am a junior front-end developer looking for a new role in an exciting company. 
+        I am open to a wide range of opportunities.
+        I am based in Montreal, Canada, but I am happy working remotely. 
+        I am a hard-working and responsible person who will always approach each task with a sense of purpose 
+        and attention to detail. I have passion for learning new technologies. Capable of working within a team
+        environment and independently. Ability to plan and time schedule, work
+        under strick time pressure and adapt quickly when needed.
+        When I am not coding, I love being out in nature.
+       
+      </p>
+      <div class="about_majors">
+        <div class="major">
+          <div class="major_icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major_title">Front-end</h2>
+          <div class="major_description">
+            HTML, CSS, JavaScript, TypeScript,
+            <br />
+            React, Web APIs
+          </div>
+        </div>
+        <div class="major">
+          <div class="major_icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major_title">Back-end</h2>
+          <div class="major_description">NodeJS, Rest APIs</div>
+        </div>
+      </div>
+      <!-- <div class="about_jobs">
+        <div class="job">
+        <img src="imgs/logo.png" alt="" class="job_logo" />
+        <div class="job_description">
+       <p class="job_name"> Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="job_period"> 2011 - 2020</p>
+        </div>
+        </div>
+      <div class="job">
+        <img src="imgs/logo.png" alt="" class="job_logo" />
+        <div class="job_description">
+       <p class="job_name"> Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="job_period"> 2011 - 2020</p>
+        </div>
+        </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- skills -->
+    <section id="skills" class="section">
+      <div class="section-container">
+      <h1>Skills</h1>
+      <h2>Skills and Attributes</h2>
+      <p>
+        I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. 
+      </p>
+      <div class="skillset">
+        <div class="skillset_left">
+          <h3 class="skillset_title">Skills</h3>
+          <div class="skill">
+            <div class="skill_description">
+              <span>HTML</span>
+              <span>99%</span>
+              </div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 99%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+            <div class="skill_description">
+              <span>CSS</span>
+              <span>90%</span>
+              </div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+            <div class="skill_description">
+              <span>JAVASCRIPT</span>
+              <span>90%</span>
+            </div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+            <div class="skill_description">
+              <span>TYPESCRIPT</span>
+              <span>70%</span>
+              </div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+            <div class="skill_description">
+              <span>REACT</span>
+              <span>80%</span>
+              </div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+            <div class="skill_description">
+              <span>NODEJS</span>
+              <span>75%</span>
+            </div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+        <div class="skillset_right">
+            <h3>Tools</h3>
+            <ul class="tools_list">
+                <li><i class="fa-solid fa-check"></i>GitHub</li>
+                <li><i class="fa-solid fa-check"></i>Postman</li>
+                 <li><i class="fa-solid fa-check"></i>SASS</li>
+                 <li><i class="fa-solid fa-check"></i></i>NPM</li>
+                  <li><i class="fa-solid fa-check"></i>MongoDB</li>
+                   <li><i class="fa-solid fa-check"></i>Visual Studio Code</li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- work -->
+    <section id="work" class="section section-container">
+      <h1>Portfolio</h1>
+      <div class="work_categories">
+       <button class="category_btn selected" data-filter="*">All <span class="category_count">3</span></button>
+       <button class="category_btn" data-filter="front-end">Front-end <span class="category_count">2</span></button>
+       <button class="category_btn"data-filter="back-end">Back-end <span class="category_count">2</span></button>
+       <button class="category_btn" data-filter="mobile">Mobile <span class="category_count">1</span></button>
+      </div>
+      <div class="work_projects" >
+        <a href="https://bokyung-kim06.github.io/cafe-pluto/" class="project" target="blank" data-type="front-end">
+      <img src="imgs/projects/cafePluto.png" alt="cafe-pluto" class="project_img">
+      <div class="project_description">
+        <h3>cafe pluto</h3>
+        <span>cafe website with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="back-end">
+      <img src="imgs/projects/BeSafe-phones.png" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="mobile">
+      <img src="imgs/logo.svg" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="front-end">
+      <img src="imgs/projects/BeSafe-phones.png" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="front-end">
+      <img src="imgs/me.png" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="mobile">
+      <img src="imgs/projects/BeSafe-phones.png" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="front-end">
+      <img src="imgs/projects/BeSafe-phones.png" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+        <a href="https://github.com/chloenamu/portfolio" class="project" target="blank" data-type="back-end">
+      <img src="imgs/projects/BeSafe-phones.png" alt="besafe" class="project_img">
+      <div class="project_description">
+        <h3>besafe</h3>
+        <span>clone coding with html and css</span>
+      </div>
+        </a>
+      </div>
+    </section>
+    <!-- contact -->
+    <footer  id="contact"  class="section">
+      <h1 class="contact_title">Let's talk</h1>
+    <h3 class="contact_email">bkchloekim@gmail.com</h3>
+      <div class="contact_links">
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+
+    <!-- arrow up -->
+    <button class="arrow-up"><i class="fas fa-arrow-alt-circle-up"></i></button>
+   
+  </body>
+</html>
