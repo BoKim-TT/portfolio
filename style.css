@@ -14,6 +14,7 @@
    --color-dark-pink: #ff8a80;
    --color-orange:#feb546;
    --color-dark-brown:#3d3d3d;
+   --color-brown: #D0C9C0;
 
 
   /* font size */
@@ -261,36 +262,6 @@ color: var(--color-white-grey)
 .major_description {
   font-size: var(--font-small);
 }
-/* 
-.job {
-  display: flex;
-  margin-left: 50px;
-  align-items: center;
-}
-
-.job_logo {
-  width: 100px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 50px;
-}
-
-.job_description {
-  text-align: left;
-}
-
-.job_name,
-.job_period {
-  color: var(--color-grey);
-}
-
-.job_name {
-  font-size: var(--font-small);
-}
-
-.job_period {
-  font-size: var(--font-micro);
-} */
 
 /* skills */
 
@@ -409,10 +380,10 @@ color: var(--color-white-grey)
 }
 .project {
   position: relative;
-  width: 200px;
-  height: 250px;
-  margin: 2px;
-  background-color: var(--color-light-grey);
+  width: 250px;
+  height: 200px;
+  margin: 3px;
+  background-color:var(--color-brown);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,7 +395,7 @@ color: var(--color-white-grey)
 .project_img {
   max-width: 90%;
   max-height: 90%;
-  /* align-self: center; */
+  align-self: center;
 }
 
 .project_description {

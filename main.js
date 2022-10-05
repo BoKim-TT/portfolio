@@ -83,8 +83,10 @@ workBtnContainer.addEventListener('click', (event) => {
   workProjectContainer.classList.add('anim-out');
 
   setTimeout(() => {
+ 
     projects.forEach((project) => {
-      if (filter === '*' || filter === project.dataset.type) {
+      
+      if (filter === '*' || filter === project.dataset.type || filter === project.dataset.filter) {
         project.classList.remove('invisible');
       } else {
         project.classList.add('invisible');
