@@ -226,7 +226,8 @@ color: var(--color-white-grey)
 }
 /* about */
 #about p {
-  line-height: 20px;
+  line-height: 25px;
+  font-size: var(--font-regular);
 }
 .about_majors {
   display: flex;
