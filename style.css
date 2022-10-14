@@ -214,7 +214,7 @@ p {
 .section {
   padding: 30px;
   text-align: center;
-  margin: auto;
+  margin: 0;
 }
 .section-container {
   max-width: 1200px;
@@ -449,7 +449,10 @@ p {
 .contact_email {
   font-family: 'Public Sans';
   color: var(--color-white-grey);
+  display: block;
+  margin-bottom: 15px;
 }
+
 .contact_links {
   font-size: var(--font-medium);
   margin-bottom: 10px;
@@ -521,10 +524,13 @@ p {
   .navbar__logo.visible {
     display: none;
   }
-  .section {
-    padding: 30px;
-    padding-top: 30px;
-  }
+ 
+  #about p {
+  line-height: 18px;
+  font-size: var(--font-small);
+  text-align: left;
+  margin: 0 ;
+}
   #home {
     padding: 20px;
     padding-top: 120px;
