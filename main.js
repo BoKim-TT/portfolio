@@ -5,6 +5,8 @@ const navbar = document.querySelector('#navbar');
 const navbarItems = document.querySelectorAll('.navbar_menu_item');
 const navbarHeight = navbar.getBoundingClientRect().height;
 const navbarLogo = document.querySelector('.navbar__logo');
+
+
 document.addEventListener('scroll', () => {
   if (window.scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark');
@@ -104,4 +106,7 @@ function scrollInto(selectorId) {
   document.querySelector(selectorId).scrollIntoView({ behavior: 'smooth' });
  
 }
+
+
+
 

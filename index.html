@@ -27,7 +27,6 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-
     <!-- navbar -->
     <nav id="navbar">
       <ul class="navbar_menu">
@@ -38,7 +37,7 @@
         <li class="navbar_menu_item" data-link="#contact">CONTACT</li>
       </ul>
 
-    <!-- toggle button for small devices-->
+      <!-- toggle button for small devices-->
       <button class="navbar_toggle-btn"><i class="fas fa-bars"></i></button>
       <div class="navbar__logo">
         <i class="fab fa-diaspora"></i>
@@ -53,13 +52,13 @@
           I am Bokyung
         </h1>
         <h2 class="home_description">
-          A Software Engineer currently residing in Montreal, Canada.
+          full stack web developer currently living in Montreal, Canada.
         </h2>
       </div>
 
       <div class="avatar_container">
         <img src="imgs/avatar.png" alt="my profile image" class="home_avatar" />
-        <button class="home_contact">Contact Me</button>
+          <a class="resume" href="imgs/CV-02.pdf">Download Resume</a>
       </div>
     </section>
 
@@ -67,19 +66,25 @@
     <section id="about" class="section section-container">
       <h1>About Me</h1>
       <p>
-        I am a junior web developer with multiple projects built using modern
-        technologies such as ReactJS and ExpressJS with Mongo databases. I am
-        looking for a new role in an exciting company! I am open to a wide range
-        of opportunities. I am based in Montreal, Canada, but I am happy working
-        remotely.
+        Hello and welcome to my portfolio website!
         <br /><br />
-        I work well both independently and as a team member. I have always been
-        described as a responsible and detail-oriented person. And I am
-        analytical and good at problem-solving. When given a task, I consider
-        myself responsible for it from beginning to end. I believe those
-        abilities are crucial for every good programmer.
+        My name is Bokyung and I am a junior web developer based in Montreal,
+        Canada. I am passionate about creating dynamic and innovative projects
+        using ReactJs and NodeJs, and am constantly seeking to learn and grow in
+        my field through modern technologies.
         <br /><br />
-        When I am not coding, I love being out in nature!
+        In addition to my technical skills, I am a responsible and
+        detail-oriented individual with strong analytical skills and a love for
+        problem-solving. With 8 years of experience as a hospital and community
+        pharmacist, I have a track record of being able to identify and resolve
+        complex issues efficiently. I am also a reliable and capable programmer
+        who takes ownership of tasks and sees them through to completion.
+        <br /><br />
+        When I'm not coding, I love getting outside and enjoying nature. I hope
+        you will take a look around my portfolio and get to know me a little
+        better. If you have any questions or just want to say hello, please
+        don't hesitate to contact me.
+        <br /><br />
       </p>
       <div class="about_majors">
         <div class="major">
@@ -186,10 +191,10 @@
       <h1>Portfolio</h1>
       <div class="work_categories">
         <button class="category_btn selected" data-filter="*">
-          All <span class="category_count">3</span>
+          All <span class="category_count">4</span>
         </button>
         <button class="category_btn" data-filter="front-end">
-          Front-end <span class="category_count">3</span>
+          Front-end <span class="category_count">4</span>
         </button>
         <button class="category_btn" data-filter="back-end">
           Back-end <span class="category_count">1</span>
@@ -198,6 +203,7 @@
           Mobile <span class="category_count">0</span>
         </button>
       </div>
+      <h3>To visit the project website, click on the image below</h3>
       <div class="work_projects">
         <a
           href="https://takecare.netlify.app/"
@@ -213,10 +219,13 @@
           />
           <div class="project_description">
             <h3>Take care</h3>
-            <span
-              >Personal health record web app with React, ExpressJS, restAPIs,
-              mongoDB</span
-            >
+            <span>
+              Personal health record web app
+              <p>- ReactJs, ExpressJs, RestAPIs, MongoDB, Styled-Component</p>
+              <p>- log in with email account using OAuth and Bcrypt</p>
+              <p>- create, edit or delete records by CRUD operations</p>
+              <p>- REST APIs from MedlinePlus and Mediastack</p>
+            </span>
           </div>
         </a>
         <a
@@ -232,7 +241,11 @@
           />
           <div class="project_description">
             <h3>Carrot game</h3>
-            <span>simple game with JavaScript and css</span>
+            <span
+              >Simple but fun game
+              <p>- JavaScript, CSS</p>
+              <p>- browser coordinates & DOM manipulation</p></span
+            >
           </div>
         </a>
         <a
@@ -248,7 +261,30 @@
           />
           <div class="project_description">
             <h3>Cafe pluto</h3>
-            <span>Cafe website with html and css</span>
+            <span
+              >Cafe website
+              <p>- HTML, CSS, JavaScript</p>
+              <p>- the project is still in progress.</p>
+            </span>
+          </div>
+        </a>
+        <a
+          href="https://bokyung-kim06.github.io/shopping-list/"
+          class="project"
+          target="blank"
+          data-type="front-end"
+        >
+          <img
+            src="imgs/projects/shopping-list.png"
+            alt="shopping-list"
+            class="project_img"
+          />
+          <div class="project_description">
+            <h3>My shopping list</h3>
+            <span
+              >Shopping list app
+              <p>- HTML, CSS, JavaScript</p></span
+            >
           </div>
         </a>
       </div>
