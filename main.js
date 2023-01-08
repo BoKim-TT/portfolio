@@ -38,11 +38,8 @@ navbarToggle.addEventListener('click', () => {
   navbarMenu.classList.add('open');
 });
 
-// scrolling when tapping on the "Contact me" button
-const contactMe = document.querySelector('.home_contact');
-contactMe.addEventListener('click', () => {
-  scrollInto('#contact');
-});
+
+
 
 // make home section slowly fade to transparent as scrolls down
 const home = document.querySelector('#home');
@@ -77,6 +74,7 @@ workBtnContainer.addEventListener('click', (event) => {
   if (filter == null) {
     return;
   }
+
   //remove selection from the previous item and select the new item
   const active = document.querySelector('.category_btn.selected');
   active.classList.remove('selected');
