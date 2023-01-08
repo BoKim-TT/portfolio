@@ -172,7 +172,7 @@ p {
 #home {
   background: url(imgs/background.png) center/cover no-repeat;
   padding: 70px;
-  padding-top: 150px;
+  padding-top: 120px;
   text-align: center;
   display: flex;
 }
@@ -225,7 +225,7 @@ p {
   display: flex;
   justify-content: space-around;
   margin: 10px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .major_icon {
@@ -261,6 +261,9 @@ p {
   background-color: var(--color-pink-beige);
 }
 
+#skills p {
+  padding: 0 8px;
+}
 .skillset {
   display: flex;
   margin: 40px;
@@ -369,9 +372,9 @@ p {
 }
 .project {
   position: relative;
-  width: 450px;
+  width: 400px;
   height: 280px;
-  margin: 15px;
+  margin: 20px 30px;
   border-radius: 13px;
   border: 1px solid var(--color-grey);
   display: flex;
@@ -433,10 +436,6 @@ p {
   color: white;
   line-height: 1.5;
 }
-.project:hover .project_description {
-  opacity: 0.8;
-  transform: translateY(0px);
-}
 
 /* contact */
 #contact {
@@ -484,6 +483,16 @@ p {
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* for hover effect for different devices */
+@media (hover: hover) and (pointer: fine) {
+  .project:hover .project_description,
+  .project:active .project_description,
+  .project:focus .project_description {
+    opacity: 0.8;
+    transform: translateY(0px);
+  }
 }
 
 /* For below 768px screen width */
@@ -557,7 +566,6 @@ p {
     height: 250px;
   }
   .about_majors {
-    /* margin-top: 30px; */
     margin-bottom: 0;
     flex-direction: column;
   }
@@ -579,9 +587,9 @@ p {
     width: 100%;
   }
   .project {
-   
     flex-grow: 1;
   }
+
   .testimonial {
     flex-direction: column;
     align-items: center;

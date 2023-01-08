@@ -105,6 +105,10 @@ function scrollInto(selectorId) {
  
 }
 
+// add the hover effect too touch screen devices
+
+document.addEventListener("touchstart", function(){}, true);
+
 
 
 
