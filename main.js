@@ -5,7 +5,9 @@ const navbar = document.querySelector('#navbar');
 const navbarItems = document.querySelectorAll('.navbar_menu_item');
 const navbarHeight = navbar.getBoundingClientRect().height;
 const navbarLogo = document.querySelector('.navbar__logo');
-
+const workBtnContainer = document.querySelector('.work_categories');
+const workProjectContainer = document.querySelector('.work_projects');
+const projects = document.querySelectorAll('.project');
 
 document.addEventListener('scroll', () => {
   if (window.scrollY > navbarHeight) {
@@ -38,9 +40,6 @@ navbarToggle.addEventListener('click', () => {
   navbarMenu.classList.add('open');
 });
 
-
-
-
 // make home section slowly fade to transparent as scrolls down
 const home = document.querySelector('#home');
 const homeHeight = home.getBoundingClientRect().height;
@@ -63,9 +62,6 @@ arrowUp.addEventListener('click', () => {
 });
 
 // filter projects by categories
-const workBtnContainer = document.querySelector('.work_categories');
-const workProjectContainer = document.querySelector('.work_projects');
-const projects = document.querySelectorAll('.project');
 
 workBtnContainer.addEventListener('click', (event) => {
   const filter =
@@ -87,8 +83,11 @@ workBtnContainer.addEventListener('click', (event) => {
 
   setTimeout(() => {
     projects.forEach((project) => {
-      
-      if (filter === '*' || filter === project.dataset.type || filter === project.dataset.filter) {
+      if (
+        filter === '*' ||
+        filter === project.dataset.type ||
+        filter === project.dataset.filter
+      ) {
         project.classList.remove('invisible');
       } else {
         project.classList.add('invisible');
@@ -102,13 +101,5 @@ workBtnContainer.addEventListener('click', (event) => {
 //move to selected section by scrollIntoView & activate the same nav menu
 function scrollInto(selectorId) {
   document.querySelector(selectorId).scrollIntoView({ behavior: 'smooth' });
- 
 }
-
-// add the hover effect too touch screen devices
-
-document.addEventListener("touchstart", function(){}, true);
-
-
-
 

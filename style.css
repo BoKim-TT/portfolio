@@ -437,6 +437,14 @@ p {
   line-height: 1.5;
 }
 
+.project:hover .project_description,
+.project:active .project_description {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+
+
 /* contact */
 #contact {
   background-color: var(--color-dark-grey);
@@ -485,15 +493,7 @@ p {
   pointer-events: auto;
 }
 
-/* for hover effect for different devices */
-@media (hover: hover) and (pointer: fine) {
-  .project:hover .project_description,
-  .project:active .project_description,
-  .project:focus .project_description {
-    opacity: 0.8;
-    transform: translateY(0px);
-  }
-}
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
