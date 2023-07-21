@@ -1,6 +1,6 @@
 'use strict';
 
-// make navbar transparent when it is on the top
+// Implement transparency for the background of navbar when it is at the top of the page
 const navbar = document.querySelector('#navbar');
 const navbarItems = document.querySelectorAll('.navbar_menu_item');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -21,33 +21,34 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// handle scrollong when tapping on the navbar menu
+// Implement scrolling behavior when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar_menu');
 navbarMenu.addEventListener('click', (event) => {
   const targetSection = event.target.dataset.link;
   if (targetSection == null) {
     return;
   }
-  // close the nav box for small screen when clicked
+  // Close the navigation box for small screens when clicked.
   navbarMenu.classList.remove('open');
-  // move into the clicked section
+
+  // Scroll to the clicked section on the page.
   scrollInto(targetSection);
 });
 
-//navbar toggle button for small screen : responsive model
+// Navbar toggle button for small screens: Responsive model.
 const navbarToggle = document.querySelector('.navbar_toggle-btn');
 navbarToggle.addEventListener('click', () => {
   navbarMenu.classList.add('open');
 });
 
-// make home section slowly fade to transparent as scrolls down
+// Implement a gradual fade effect for the home section as the page scrolls down.
 const home = document.querySelector('#home');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// move the page up when pressing the arrow up button
+// Scroll the page to the top when the arrow up button is pressed.
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight / 2) {
@@ -61,8 +62,7 @@ arrowUp.addEventListener('click', () => {
   scrollInto('#home');
 });
 
-// filter projects by categories
-
+// Enable project filtering based on categories.
 workBtnContainer.addEventListener('click', (event) => {
   const filter =
     event.target.dataset.filter || event.target.parentNode.dataset.filter;
@@ -71,7 +71,7 @@ workBtnContainer.addEventListener('click', (event) => {
     return;
   }
 
-  //remove selection from the previous item and select the new item
+  // Deselect the previous item and select the new item.
   const active = document.querySelector('.category_btn.selected');
   active.classList.remove('selected');
 
@@ -102,4 +102,3 @@ workBtnContainer.addEventListener('click', (event) => {
 function scrollInto(selectorId) {
   document.querySelector(selectorId).scrollIntoView({ behavior: 'smooth' });
 }
-

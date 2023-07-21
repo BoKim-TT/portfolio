@@ -39,6 +39,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   cursor: default;
@@ -102,7 +106,7 @@ p {
   position: fixed;
   width: 100%;
   background-color: transparent;
-  padding: 16px;
+  padding: 30px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
   display: flex;
@@ -172,7 +176,7 @@ p {
 #home {
   background: url(imgs/background.png) center/cover no-repeat;
   padding: 70px;
-  padding-top: 120px;
+  padding-top: 220px;
   text-align: center;
   display: flex;
 }
