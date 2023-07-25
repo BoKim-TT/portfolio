@@ -16,7 +16,7 @@
 
   /* font size */
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 24px;
   --font-regular: 18px;
   --font-small: 14px;
   --font-micro: 12px;
@@ -106,7 +106,7 @@ p {
   position: fixed;
   width: 100%;
   background-color: transparent;
-  padding: 30px;
+  padding: 15px 30px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
   display: flex;
@@ -134,8 +134,8 @@ p {
   margin: 0 4px;
   cursor: pointer;
   font-family: 'Public Sans';
-  font-size: var(--font-regualr);
-  font-weight: var(--weight-semi-bold);
+  font-size: 16px;
+  font-weight: 500;
 }
 .navbar_menu_item.item--light {
   color: var(--color-white-grey);
@@ -176,10 +176,9 @@ p {
 #home {
   background: url(imgs/background.png) center/cover no-repeat;
   padding: 100px;
-  padding-top: 250px;
+  padding-top: 200px;
   text-align: center;
   display: flex;
-  /* border: 1px solid red; */
 }
 
 .description_container {
@@ -289,7 +288,7 @@ p {
 .skillset_title {
   color: var(--color-white-grey);
   padding-bottom: 20px;
-   font-size:20px;
+  font-size: 20px;
 }
 .skill_description {
   display: flex;
@@ -315,18 +314,18 @@ p {
 .skillset_right h3 {
   color: var(--color-white-grey);
   padding-bottom: 20px;
-   font-size:20px;
+  font-size: 20px;
 }
 .skillset_right li {
   font-size: var(--font-micro);
   padding: 10px;
   text-align: left;
   margin-left: 50px;
-   font-size: var(--font-small);
+  font-size: var(--font-small);
 }
 .tools_list i {
   margin: 0 10px;
-   font-size: var(--font-small);
+  font-size: var(--font-small);
 }
 
 /* projects */
