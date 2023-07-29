@@ -231,6 +231,9 @@ p {
   margin: 10px;
   padding-top: 20px;
 }
+.major {
+  width: 35%;
+}
 
 .major_icon {
   width: 170px;
