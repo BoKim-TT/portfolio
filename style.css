@@ -412,6 +412,7 @@ p {
   background-color: var(--color-dark-brown);
   width: 100%;
   height: 100%;
+  padding: 5px;
   border-radius: 10px;
   display: flex;
   flex-flow: column;
@@ -422,7 +423,7 @@ p {
 }
 .project_description h3 {
   color: var(--color-dark-pink);
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .project_description h3:after {
@@ -436,17 +437,17 @@ p {
   transform: translateX(-30%);
   margin-left: -12px;
   margin-top: 8px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 .project_description span {
-  margin: 25px;
-  font-size: 15px;
+  margin: 0 20px;
+  font-size: 14px;
   color: var(--color-dark-pink);
 }
 
 .project_description p {
-  margin: 7px 30px;
-  font-size: 12px;
+  margin: 5px 20px;
+  font-size: 13px;
   color: white;
   line-height: 1.5;
 }
